@@ -1,7 +1,7 @@
+from art import logo
+print(logo)
 def add(n1, n2):
     return n1 + n2
-
-# TODO 1: Write out the other 3 functions - subtract, multiply and divide
 
 def subtract(n1, n2):
     return n1 - n2
@@ -12,37 +12,35 @@ def multiply(n1, n2):
 def divide(n1, n2):
     return n1 / n2
 
-#TODO 2: Add these four functions into a dictionary as the values. Keys = "+", "-", "*", "/"
-
-operations = {
+operator_symbol = {
     "+": add,
     "-": subtract,
     "*": multiply,
     "/": divide
 }
+def calculator():
+    print(logo)
+    should_acc = True
+    n1 = float(input("What's the first number? "))
 
-#TODO 3: Use the dictionary operations to perform the calculations. Multiply 4 * 8 using the dictionary.
-# result = operations["*"](4,8)
-# print(result)
+    while should_acc:
+        for symbol in operator_symbol:
+            print(symbol)
+        operator_choice = input("Pick an operation: ")
+        # if operator != "+" or "-" or "*" or "/" :
+        #     print("Wrong input. Restart and choose an operator")
 
-n1 = int(input("What's the first number? "))
-print("""
-+
--
-*
-/""")
-operator = input("Pick an operation: ")
-# if operator != "+" or "-" or "*" or "/" :
-#     print("Wrong input. Restart and choose an operator")
+        n2 = float(input("What's the next number?: "))
+        answer = operator_symbol[operator_choice](n1, n2)
+        print(f"{n1} {operator_choice} {n2} = {answer}")
 
-n2 = int(input("Choose the second number: "))
-if operator == "+":
-    print(add(n1, n2))
-elif operator == "-":
-    print(subtract(n1, n2))
-elif operator == "*":
-    print(multiply(n1, n2))
-elif operator == "/":
-    print(divide(n1, n2))
-else:
-    print("Wrong input. Restart and choose an operator from the list. ")
+        choice = (input(f"Type 'y' to continue calculating with {answer}, or type 'n' to start a new calculation"))
+
+        if choice == "y":
+            n1 = answer
+        else:
+            should_acc = False
+            print("\n"*20)
+            calculator()
+
+calculator()
