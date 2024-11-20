@@ -27,22 +27,5 @@ while attempts > 0:
         attempts -= 1
     elif guess == number:
         print("Game over! You win.")
-
-print("You ran out of attempts. Gave over.")
-
-
-
-
-
-
-#second version, still in progress.
-#while guess != number:
-
-#    if difficulty == "easy":
- #       guess = input(str(f"You have {10} attempts remaining to guess the number.\nMake a guess: "))
-  #          if
-#
-#
- #   elif difficulty == "hard":
-  #      input(str(f"You have {5} attempts remaining to guess the number.\nMake a guess: "))
-
+    elif attempts == 0:
+        print("You ran out of attempts. Game over.")
