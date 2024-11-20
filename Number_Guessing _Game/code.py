@@ -8,14 +8,33 @@ logo = r"""
 
 print("Welcome to the number guessing game!\nI'm thinking of a number between 1 and 100.")
 difficulty = input("Choose a difficulty. Type 'easy or 'hard': ").lower()
-guess = " "
+#guess = " "
 number = random.randint(1,100)
+attempts = " "
 
-if difficulty
-    
-    
-    
-    
+if difficulty == "easy":
+    attempts = 10
+elif difficulty == "hard":
+    attempts = 5
+
+while attempts > 0:
+    guess = int(input(f"You have {attempts} attempts left. Make a guess: "))
+    if guess > number:
+        print("Too High. Try again")
+        attempts -= 1
+    elif guess < number:
+        print("Too low. Try again.")
+        attempts -= 1
+    elif guess == number:
+        print("Game over! You win.")
+
+print("You ran out of attempts. Gave over.")
+
+
+
+
+
+
 #second version, still in progress.
 #while guess != number:
 
@@ -26,3 +45,4 @@ if difficulty
 #
  #   elif difficulty == "hard":
   #      input(str(f"You have {5} attempts remaining to guess the number.\nMake a guess: "))
+
