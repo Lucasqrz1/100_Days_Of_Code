@@ -37,9 +37,6 @@ def report():
     print(f"Milk: {resources['milk']}ml")
     print(f"Coffee: {resources['coffee']}g")
     print(f"Money: ${profit}")
-    order()
-
-
 
 
 #Check resources sufficient?
@@ -48,18 +45,16 @@ def check_resources(order):
         if resources[item] < MENU[order]["ingredients"][item]:
                 print(f"Sorry, there is not enough {item}.")
                 return False
-        for item in MENU[order]:
-            resources[item] -= MENU[order][item]
-    return True
+        return True
 
 #Process coins
 def process_coins():
     print("Please insert coins.")
     quarters = int(input("How many quarters? :")) * 0.25
-    dimes = int(input("How many dimes?: ")) * 10
-    nickles = int(input("how many nickles?: ")) * 5
-    pennies = int(input("How many pennies?: "))
-    total = float(quarters + dimes + nickles + pennies)
+    dimes = int(input("How many dimes?: ")) * 0.10
+    nickles = int(input("how many nickles?: ")) * 0.05
+    pennies = int(input("How many pennies?: ")) * 0.01
+    total = quarters + dimes + nickles + pennies
     return total
 
 
@@ -67,18 +62,28 @@ def process_coins():
 def transaction_successful(money_received, drink_cost):
     if money_received >= drink_cost:
         change = round(money_received - drink_cost, 2)
-        print(f"Here is your change: ${change}. Thanks for coming!")
+        global profit
+        profit += drink_cost
+        if change == 0:
+            print("No change needed.")
+        else:
+            print(f"Here is your change: ${change}. Thanks for coming!")
+        return True
     else:
         print("Sorry. You don't have enough money.")
         return False
+
 #Deduct the resources
-def deduct_resources
+def deduct_resources(order):
+    for item in MENU[order]['ingredients']:
+        resources[item] -= MENU[order]['ingredients'][item]
+
 
 
 #Make the coffee
 def make_coffee(order):
     deduct_resources(order)
-    print(f"Here's your{order}. Enjoy! ")
+    print(f"Here's your {order}. Have a good day! ")
 
 
 #Main loop
@@ -89,7 +94,6 @@ while should_continue:
         report()
     elif order == "off":
         should_continue = False
-        check_resources(order)
     else:
         if order in MENU:
             if check_resources(order):
@@ -98,6 +102,3 @@ while should_continue:
                     make_coffee(order)
         else:
             print("Sorry, we don't have that option.")
-
-
-
