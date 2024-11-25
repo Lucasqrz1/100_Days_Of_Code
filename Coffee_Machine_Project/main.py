@@ -45,7 +45,7 @@ def check_resources(order):
         if resources[item] < MENU[order]["ingredients"][item]:
                 print(f"Sorry, there is not enough {item}.")
                 return False
-        return True
+    return True
 
 #Process coins
 def process_coins():
