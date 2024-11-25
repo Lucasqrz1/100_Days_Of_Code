@@ -29,27 +29,75 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
-water_available = 100
-milk_available = 200
-coffee_available = 100
-money = 0
+profit = 0
 
 #Print report
 def report():
-    print(f"Water: {water_available}ml")
-    print(f"Milk: {milk_available}ml")
-    print(f"Coffee: {coffee_available}g")
-    print(f"Money: ${money}")
-report()
+    print(f"Water: {resources['water']}ml")
+    print(f"Milk: {resources['milk']}ml")
+    print(f"Coffee: {resources['coffee']}g")
+    print(f"Money: ${profit}")
+    order()
 
-#Ask customer for order
-order = input("What would you like? (espresso/latte/cappuccino):")
+
+
 
 #Check resources sufficient?
+def check_resources(order):
+    for item in MENU[order]["ingredients"]:
+        if resources[item] < MENU[order]["ingredients"][item]:
+                print(f"Sorry, there is not enough {item}.")
+                return False
+        for item in MENU[order]:
+            resources[item] -= MENU[order][item]
+    return True
 
 #Process coins
+def process_coins():
+    print("Please insert coins.")
+    quarters = int(input("How many quarters? :")) * 0.25
+    dimes = int(input("How many dimes?: ")) * 10
+    nickles = int(input("how many nickles?: ")) * 5
+    pennies = int(input("How many pennies?: "))
+    total = float(quarters + dimes + nickles + pennies)
+    return total
+
 
 #Check transaction successful?
+def transaction_successful(money_received, drink_cost):
+    if money_received >= drink_cost:
+        change = round(money_received - drink_cost, 2)
+        print(f"Here is your change: ${change}. Thanks for coming!")
+    else:
+        print("Sorry. You don't have enough money.")
+        return False
+#Deduct the resources
+def deduct_resources
 
-#Make the coffee/deduct the resources
+
+#Make the coffee
+def make_coffee(order):
+    deduct_resources(order)
+    print(f"Here's your{order}. Enjoy! ")
+
+
+#Main loop
+should_continue = True
+while should_continue:
+    order = str(input("What would you like? (espresso/latte/cappuccino):")).lower()
+    if order == "report":
+        report()
+    elif order == "off":
+        should_continue = False
+        check_resources(order)
+    else:
+        if order in MENU:
+            if check_resources(order):
+                payment = process_coins()
+                if transaction_successful(payment, MENU[order]['cost']):
+                    make_coffee(order)
+        else:
+            print("Sorry, we don't have that option.")
+
+
 
