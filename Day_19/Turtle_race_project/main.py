@@ -19,7 +19,7 @@ def turn_left():
 def turn_right():
     new_heading = tim.heading() - 10
     tim.setheading(new_heading)
-def jump():
+#def jump():
     tim.penup()
     tim.forward(20)
     tim.pendown()
