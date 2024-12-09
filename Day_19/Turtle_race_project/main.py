@@ -19,10 +19,17 @@ def turn_left():
 def turn_right():
     new_heading = tim.heading() - 10
     tim.setheading(new_heading)
-#def jump():
+
+def clear():
+    tim.clear()
     tim.penup()
-    tim.forward(20)
+    tim.home()
     tim.pendown()
+
+# def jump():
+#     tim.penup()
+#     tim.forward(20)
+#     tim.pendown()
 
 num = []
 for i in range (10):
@@ -34,5 +41,6 @@ screen.onkey(move_forwards, "w")
 screen.onkey(turn_left, "a")
 screen.onkey(turn_right, "d")
 screen.onkey(move_backwards, "s")
-screen.onkey(jump, "space")
+# screen.onkey(jump, "space")
+screen.onkey(clear, "c")
 screen.exitonclick()
