@@ -1,46 +1,34 @@
 from turtle import Turtle, Screen
-
-tim = Turtle()
+import random
+is_race_on = False
 screen = Screen()
-tim.shape("turtle")
-tim.color("purple")
+screen.setup(width=500, height=400)
+user_bet = screen.textinput(title="make your bet", prompt="Which turtle will win the race? enter a color: ")
+colors = ["red", "orange", "yellow", "green", "blue", "purple"]
+y_positions = [-70, -40, -10, 20, 50, 80]
+racers = ["lucas", "anna", "thales", "ben", "elisa", "glenn"]
+all_turtles = []
 
-def move_forwards():
-    tim.forward(10)
+for turtle_index in range (0, 6):
+    new_turtle = Turtle(shape="turtle")
+    new_turtle.color(colors[turtle_index])
+    new_turtle.penup()
+    new_turtle.goto(x=-230, y= y_positions[turtle_index])
+    all_turtles.append(new_turtle)
 
-#Create the function with the given 'onkey' arguments:
-def move_backwards():
-    tim.backward(10)
+if user_bet:
+    is_race_on = True
+while is_race_on:
+    for turtle in all_turtles:
+        if turtle.xcor() > 230:
+            is_race_on = False
+            winning_color = turtle.pencolor()
+            if winning_color == user_bet:
+                print(f"You've won! The {winning_color} turtle is the winner!")
+            else:
+                print(f"You've lost! The {winning_color} turtle is the winner!")
 
-def turn_left():
-    new_heading = tim.heading() + 10
-    tim.setheading(new_heading)
+        rand_distance = random.randint(0,10)
+        turtle.forward(rand_distance)
 
-def turn_right():
-    new_heading = tim.heading() - 10
-    tim.setheading(new_heading)
-
-def clear():
-    tim.clear()
-    tim.penup()
-    tim.home()
-    tim.pendown()
-
-# def jump():
-#     tim.penup()
-#     tim.forward(20)
-#     tim.pendown()
-
-num = []
-for i in range (10):
-    num.append(tim)
-
-
-screen.listen()
-screen.onkey(move_forwards, "w")
-screen.onkey(turn_left, "a")
-screen.onkey(turn_right, "d")
-screen.onkey(move_backwards, "s")
-# screen.onkey(jump, "space")
-screen.onkey(clear, "c")
 screen.exitonclick()
