@@ -34,7 +34,8 @@ while game_is_on:
         #Needs to bounce
         ball.bounce()
     #Detect collision with Paddle
-    if ball.distance(r_paddle) < 10 or ball.distance(l_paddle) < 10: 
+#(Turn this into a class def
+    if ball.distance(r_paddle) < 10) or ball.distance(l_paddle) < 10: 
         ball.move() *=  -1
 
 screen.exitonclick()
