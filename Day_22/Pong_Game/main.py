@@ -1,3 +1,4 @@
+
 from turtle import Turtle, Screen
 from paddle import Paddle
 from ball import Ball
@@ -30,12 +31,13 @@ while game_is_on:
     ball.move()
 
     #Detect collision with wall
-    if ball.ycor() > 300 or ball.ycor() < -300:
+    if ball.ycor() > 280 or ball.ycor() < -280:
         #Needs to bounce
-        ball.bounce()
+        ball.bounce_y()
+
     #Detect collision with Paddle
-#(Turn this into a class def
-    if ball.distance(r_paddle) < 10) or ball.distance(l_paddle) < 10: 
-        ball.move() *=  -1
+    if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() <-320:
+        print("Made contact")
+        ball.bounce_x()
 
 screen.exitonclick()
