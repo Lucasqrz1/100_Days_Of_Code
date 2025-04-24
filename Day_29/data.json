@@ -1,14 +1,14 @@
 {
-    "Facebook": {
-        "email": "example@email.com",
-        "password": "Lm$8csnL#6iu56R"
-    },
     "Amazon": {
         "email": "example@email.com",
-        "password": "!L6Z%0Y8EvzW&WDJ8"
+        "password": "123"
     },
-    "Instagram": {
+    "Facebook": {
         "email": "example@email.com",
-        "password": "c76KX2KKkEu#%5"
+        "password": "sj%7ZN2#3XxZ5u)*y"
+    },
+    "Twitter": {
+        "email": "example@email.com",
+        "password": "mT0O7XMPda%4b(3"
     }
 }
