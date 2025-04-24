@@ -76,7 +76,7 @@ def find_password():
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Password Manager")
-window.config(padx=50, pady=50)
+window.config(padx=30, pady=30)
 
 canvas = Canvas(height=200, width=200)
 logo_img = PhotoImage(file="logo.png")
