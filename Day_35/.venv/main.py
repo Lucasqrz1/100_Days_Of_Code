@@ -1,12 +1,17 @@
 import requests
+import os
 from twilio.rest import Client
-account_sid = "my_id"
-auth_token = "my_token"
+from twilio.http.http_client import TwilioHttpClient
 
-print(message.sid)
+
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "insert api key here"
+api_key = os.environ.get ("OWN_API_KEY")
+account_sid = "my_id"
+auth_token = os.environ.get ("AUTH_TOKEN")
+
+
+
 
 weather_params = {
     "lat": 42.679909,
