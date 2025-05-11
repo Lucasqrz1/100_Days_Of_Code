@@ -1,0 +1,83 @@
+/* styles.css - Updated with image sizing and purple theme */
+
+/* CSS Reset and Base Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #1a1721; /* Darker purple background */
+    --color-secondary: #2a2433; /* Slightly lighter purple for sections */
+    --color-text: #f5f5f5;
+    --color-accent: #9385a3; /* Muted purple accent */
+    --font-main: 'Helvetica Neue', Arial, sans-serif;
+    --max-width: 1200px;
+    --spacing: 2rem;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-main);
+    line-height: 1.6;
+    color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-primary) 0%, #231f2d 100%);
+    min-height: 100vh;
+}
+
+/* Image Containers */
+.hero-image img, .performance img {
+    width: 100%;
+    max-width: 800px; /* Control maximum width */
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* Center images */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image, .performance {
+    text-align: center;
+    padding: var(--spacing) 0;
+}
+
+/* Rest of your existing CSS remains the same, just update these color values: */
+
+.biography {
+    background-color: var(--color-secondary);
+    /* ... rest of the properties remain the same ... */
+}
+
+.quotes, .quote-highlight {
+    background-color: var(--color-secondary);
+    /* ... rest of the properties remain the same ... */
+}
+
+/* Add this new style for better image figure handling */
+figure {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Add hover effect on images */
+.hero-image img:hover, .performance img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* Update blockquote style to match theme */
+blockquote {
+    border-left: 4px solid var(--color-accent);
+    /* ... rest of the properties remain the same ... */
+}
+
+/* Update link colors */
+.additional-info a {
+    color: var(--color-accent);
+    /* ... rest of the properties remain the same ... */
+}
+
+.additional-info a:hover {
+    color: #b4a6c2; /* Lighter purple on hover */
+}
