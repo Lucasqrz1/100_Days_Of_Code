@@ -11,7 +11,7 @@ SHEETY_PRICES_ENDPOINT = YOUR ENDPOINT HERE
 class DataManager:
 
     def __init__(self):
-        self._user = os.environ["SHEETY_USERNAME"]
+        self._user = os.environ["SHEETY_USRERNAME"]
         self._password = os.environ["SHEETY_PASSWORD"]
         self._authorization = HTTPBasicAuth(self._user, self._password)
         self.destination_data = {}
@@ -21,7 +21,7 @@ class DataManager:
         response = requests.get(url=SHEETY_PRICES_ENDPOINT)
         data = response.json()
         self.destination_data = data["prices"]
-        # 3. Try importing pretty print and printing the data out again using pprint() to see it formatted.
+        # Try importing pretty print and printing the data out again using pprint() to see it formatted.
         # pprint(data)
         return self.destination_data
 

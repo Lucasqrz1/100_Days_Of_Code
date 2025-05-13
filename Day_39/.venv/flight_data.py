@@ -27,9 +27,9 @@ def find_cheapest_flight(data):
         FlightData: An instance of the FlightData class representing the cheapest flight found,
         or a FlightData instance where all fields are 'NA' if no valid flight data is available.
     This function initially checks if the data contains valid flight entries. If no valid data is found,
-    it returns a FlightData object containing "N/A" for all fields. Otherwise, it starts by assuming the first 
+    it returns a FlightData object containing "N/A" for all fields. Otherwise, it starts by assuming the first
     flight in the list is the cheapest. It then iterates through all available flights in the data, updating
-     the cheapest flight details whenever a lower-priced flight is encountered. The result is a populated 
+     the cheapest flight details whenever a lower-priced flight is encountered. The result is a populated
      FlightData object with the details of the most affordable flight.
     """
 
