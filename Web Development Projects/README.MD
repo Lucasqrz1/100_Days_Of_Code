@@ -1,9 +1,30 @@
-🌐 Web Development Projects
-This folder contains the web development projects I built as part of my #100DaysOfCode challenge. Each project focuses on practicing and improving my skills in HTML, CSS, and JavaScript.
+# Web Development Projects
 
-🛠️ Technologies
-HTML5
+A collection of web development projects built during the #100DaysOfCode challenge to improve and showcase HTML, CSS, and JavaScript skills.
 
-CSS3
+## 🛠️ Technologies Used
 
-JavaScript
+- HTML5
+- CSS3
+- JavaScript
+
+## 📁 Project Structure
+
+Projects will be organized in individual folders, each containing:
+- Source code
+- Project-specific documentation
+- Required assets
+
+## 🚀 Getting Started
+
+Each project can be run by opening its respective `index.html` file in a web browser.
+
+## 📝 Projects
+
+- Movie Ranking Project
+
+*Projects will be added as they are completed.*
+
+---
+
+This repository is actively maintained as part of the #100DaysOfCode challenge.
