@@ -6,6 +6,8 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException,
 from dotenv import load_dotenv
 import os
 
+#TODO: FIGURE OUT WHY PHONE FIELD IS NOT GOING THROUGH
+
 # Load environment variables
 load_dotenv()
 
