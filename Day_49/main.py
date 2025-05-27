@@ -2,15 +2,20 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, ElementClickInterceptedException
+from dotenv import load_dotenv
+import os
+
+# Load environment variables
+load_dotenv()
 
 # Configuration
 CONFIG = {
     'LOGIN_URL': "https://www.linkedin.com/login",
     'JOB_SEARCH_URL': "https://www.linkedin.com/jobs/search/?currentJobId=4227541842&f_AL=true&keywords=data%20scientist&origin=JOB_SEARCH_PAGE_JOB_FILTER",
-    'EMAIL': "lucasqrz.100daysofcode@gmail.com",
-    'PASSWORD': "TronClueFlynn999",
-    'PHONE': "1234567890",
+    'EMAIL': os.getenv('LINKEDIN_EMAIL'),
+    'PASSWORD': os.getenv('LINKEDIN_PASSWORD'),
+    'PHONE': os.getenv('LINKEDIN_PHONE'),
     'TIMEOUT': 10
 }
 
