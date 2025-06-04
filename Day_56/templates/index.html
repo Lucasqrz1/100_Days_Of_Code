@@ -1,10 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Lucas</title>
-</head>
-<body>
-    <h1>Hi, i'm Lucas!</h1>
-</body>
+<!DOCTYPE HTML>
+<!--
+	Identity by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HOME | Lucas Queiroz</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="static/assets/js/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="static/assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="static/assets/css/ie8.css" /><![endif]-->
+		<noscript><link rel="stylesheet" href="static/assets/css/noscript.css" /></noscript>
+		<style>
+			:root {
+				--primary-purple: rgba(154, 154, 159, 0.6);
+				--secondary-purple: rgba(106, 76, 175, 0.45);
+			}
+
+			body {
+				background: linear-gradient(135deg, var(--primary-purple), var(--secondary-purple)), url('static/images/bg.jpg') !important;
+				background-size: cover !important;
+				background-position: center !important;
+				background-repeat: no-repeat !important;
+				color: #ffffff !important;
+			}
+
+			#main {
+				background: rgba(255, 255, 255, 0.1) !important;
+				backdrop-filter: blur(10px);
+			}
+
+			#main h1 {
+				color: #ffffff;
+			}
+
+			.avatar img {
+				border: 2px solid rgba(255, 255, 255, 0.4) !important;
+			}
+
+			.icons a {
+				color: rgba(255, 255, 255, 0.7) !important;
+				transition: color 0.3s ease, opacity 0.3s ease;
+				opacity: 0.7;
+			}
+
+			.icons a:hover {
+				color: var(--secondary-purple) !important;
+				opacity: 1;
+			}
+
+			#footer {
+				color: #ffffff !important;
+			}
+		</style>
+	</head>
+	<body class="is-loading">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+				<section id="main" style="opacity: 0.9;">
+				<header>
+							<span class="avatar"><img src="static/images/avatar.jpg" alt=""
+													  style="max-width: 150px; height: 150px; border-radius: 50%;"/></span>
+							<h1>Lucas Queiroz</h1>
+							<p>Junior Data Analyst</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://github.com/lucasqrz1" class="fa-github">GitHub</a></li>
+								<li><a href="https://linkedin.com/in/lucasqrz" class="fa-linkedin">LinkedIn</a></li>
+								<li><a href="mailto:lucasqrz1@hotmail.com" class="fa-envelope">Email</a></li>
+							</ul>
+						</footer>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy;2025. Lucas Queiroz.</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<!--[if lte IE 8]><script src="static/assets/js/respond.min.js"></script><![endif]-->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
 </html>

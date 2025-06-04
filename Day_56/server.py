@@ -8,7 +8,7 @@ app = Flask(__name__)
 def home():
     print("Hello World!")
     # Render HTML template
-    return render_template("Tool_website.html")
+    return render_template("index.html")
 
 if __name__ == "__main__":
     app.run(debug=True)
