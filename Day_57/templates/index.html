@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <h2>{{5*6}}</h2>
+<!--    Example of import from python-->
+    <h3>Random number: {{ num }}.</h3>
+<!--    Creating a hyperlink referring to the blog page, testing with a number-->
+<!--    This number is passed to the blog page-->
+<a href="{{url_for('get_blog', num=3) }}">Go to Blog</a>
+</body>
+<footer>
+<!--    Another example of import from python-->
+    <p>Copyright {{year}}.</p>
+</footer>
+</html>
