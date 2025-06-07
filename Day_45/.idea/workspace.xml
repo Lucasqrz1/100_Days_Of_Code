@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9a0b86a-6f7b-4b46-81e2-962dea2a2bbf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Day_53/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/Web Development Projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.1+Heading+Element/2.1 Heading Element/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.1+Heading+Element/2.1 Heading Element/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.2 Paragraph Element/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.2 Paragraph Element/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.3 Void Elements/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.3 Void Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.4 Movie Ranking Project/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_41/2.4 Movie Ranking Project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.0 List Elements/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.0 List Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.1 Nesting and Indentation/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.1 Nesting and Indentation/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.2 Anchor Elements/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.2 Anchor Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.3 Image Elements/goal1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.3 Image Elements/goal2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.3 Image Elements/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.4 Birthday Invite Project/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_42/3.4 Birthday Invite Project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.1. Adding CSS/external.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.1. Adding CSS/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.1. Adding CSS/inline.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.1. Adding CSS/internal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.1. Adding CSS/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.3 CSS Selectors/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.3 CSS Selectors/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.3 CSS Selectors/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/assets/images/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/assets/images/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/assets/images/orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/assets/images/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/assets/images/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_43/5.4 Color Vocab Project/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.0 CSS Colors/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.0 CSS Colors/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.1 Font Properties/font-family.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.1 Font Properties/font-size.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.1 Font Properties/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.1 Font Properties/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.3 CSS Box Model/goal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.3 CSS Box Model/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.4 Motivation Meme Project/assets/images/daenerys.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.4 Motivation Meme Project/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/Day_44/6.4 Motivation Meme Project/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web Development Projects/README.MD" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Lucasqrz1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Lucasqrz1/100_Days_Of_Code.git",
+    "accountId": "07c68232-38fa-4bc1-ab1a-59b52a8e99ac"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 6
+}]]></component>
+  <component name="ProjectId" id="2xou4xsbG9j6FDkjUxsr6op6b93" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/lucas/PycharmProjects/100_Days_Of_Code/Day_45",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.122" />
+        <option value="bundled-python-sdk-880ecab49056-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.122" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9a0b86a-6f7b-4b46-81e2-962dea2a2bbf" name="Changes" comment="" />
+      <created>1748616560081</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748616560081</updated>
+      <workItem from="1748616561271" duration="1084000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
