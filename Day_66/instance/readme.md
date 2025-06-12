@@ -37,6 +37,3 @@ cafe records in a database.
 
 - `/report-closed/<cafe_id>?api-key=<key>` - Delete a cafe (requires API key)
 
-## Usage Examples
-
-### Get Random Cafe
