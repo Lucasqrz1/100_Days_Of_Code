@@ -12,17 +12,23 @@ class CreatePostForm(FlaskForm):
     body = CKEditorField("Blog Content", validators=[DataRequired()])
     submit = SubmitField("Submit Post")
 
-# Creating a registration form on WTForm
+
+# Create a form to register new users
 class RegisterForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired()])
     password = PasswordField("Password", validators=[DataRequired()])
     name = StringField("Name", validators=[DataRequired()])
-    submit = SubmitField("Submit!")
+    submit = SubmitField("Sign Me Up!")
 
-# TODO: Create a LoginForm to login existing users
+
+# Create a form to login existing users
 class LoginForm(FlaskForm):
     email = StringField("Email", validators=[DataRequired()])
     password = PasswordField("Password", validators=[DataRequired()])
     submit = SubmitField("Let Me In!")
 
-# TODO: Create a CommentForm so users can leave comments below posts
+
+# Create a form to add comments
+class CommentForm(FlaskForm):
+    comment_text = CKEditorField("Comment", validators=[DataRequired()])
+    submit = SubmitField("Submit Comment")
