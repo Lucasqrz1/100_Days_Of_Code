@@ -262,7 +262,7 @@ def delete_post(post_id):
     db.session.commit()
     return redirect(url_for('get_all_posts'))
 
-
+omo
 @app.route("/about")
 def about():
     return render_template("about.html", current_user=current_user)
