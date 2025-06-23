@@ -1,4 +1,5 @@
 📊 Programming Languages Popularity Analysis
+
 This project analyzes the popularity of programming languages over time using a dataset that includes Stack Overflow tag trends. The analysis is done using Python, with emphasis on data wrangling, visualization, and comparison of language trends.
 
 🗂️ Project Structure
